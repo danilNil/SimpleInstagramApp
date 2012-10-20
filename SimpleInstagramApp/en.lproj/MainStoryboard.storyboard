@@ -1,0 +1,114 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="2.0" toolsVersion="2840" systemVersion="12B19" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" initialViewController="2">
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="1926"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="5">
+            <objects>
+                <viewController id="2" customClass="ViewController" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="3">
+                        <rect key="frame" x="0.0" y="20" width="320" height="548"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="l4U-q7-coy">
+                                <subviews>
+                                    <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="Smaple text" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="wwI-B8-I0E">
+                                        <constraints>
+                                            <constraint firstAttribute="width" constant="101" id="sxr-3c-1V5"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                        <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="mpE-Me-CSU"/>
+                                </subviews>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                                <constraints>
+                                    <constraint firstItem="mpE-Me-CSU" firstAttribute="top" secondItem="l4U-q7-coy" secondAttribute="top" type="default" id="0Ge-Fu-982"/>
+                                    <constraint firstItem="wwI-B8-I0E" firstAttribute="top" secondItem="l4U-q7-coy" secondAttribute="top" type="default" id="1ym-8X-q8C"/>
+                                    <constraint firstItem="mpE-Me-CSU" firstAttribute="bottom" secondItem="l4U-q7-coy" secondAttribute="bottom" type="default" id="KBC-z6-e8y"/>
+                                    <constraint firstItem="mpE-Me-CSU" firstAttribute="leading" secondItem="l4U-q7-coy" secondAttribute="leading" type="default" id="L3E-Kb-MlI"/>
+                                    <constraint firstItem="mpE-Me-CSU" firstAttribute="trailing" secondItem="l4U-q7-coy" secondAttribute="trailing" type="default" id="xWy-yJ-79h"/>
+                                    <constraint firstItem="wwI-B8-I0E" firstAttribute="leading" secondItem="l4U-q7-coy" secondAttribute="leading" type="default" id="yV7-Lz-kGo"/>
+                                </constraints>
+                            </view>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="foC-CO-xun">
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="280" id="dRk-ws-ERm"/>
+                                </constraints>
+                            </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="nGQ-Nq-VDY">
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="15"/>
+                                <state key="normal" title="Share to Instagram">
+                                    <color key="titleColor" red="0.19607843459999999" green="0.30980393290000002" blue="0.52156865600000002" alpha="1" colorSpace="calibratedRGB"/>
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <state key="highlighted">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="share:" destination="2" eventType="touchUpInside" id="5i2-2p-ykk"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="g7G-BE-nL7">
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="15"/>
+                                <state key="normal" title="Get image">
+                                    <color key="titleColor" red="0.19607843459999999" green="0.30980393290000002" blue="0.52156865600000002" alpha="1" colorSpace="calibratedRGB"/>
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <state key="highlighted">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="getImage:" destination="2" eventType="touchUpInside" id="SDP-oe-102"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="l4U-q7-coy" firstAttribute="top" secondItem="3" secondAttribute="top" type="default" id="APW-YY-omJ"/>
+                            <constraint firstItem="l4U-q7-coy" firstAttribute="leading" secondItem="3" secondAttribute="leading" type="default" id="Ekz-ar-8hb"/>
+                            <constraint firstAttribute="trailing" secondItem="l4U-q7-coy" secondAttribute="trailing" constant="-292" id="Ndp-DY-LQX"/>
+                            <constraint firstItem="g7G-BE-nL7" firstAttribute="centerX" secondItem="nGQ-Nq-VDY" secondAttribute="centerX" type="default" id="Q6c-OH-1IQ"/>
+                            <constraint firstAttribute="bottom" secondItem="nGQ-Nq-VDY" secondAttribute="bottom" constant="72" id="SwW-1b-2my"/>
+                            <constraint firstItem="foC-CO-xun" firstAttribute="leading" secondItem="3" secondAttribute="leading" constant="20" symbolic="YES" type="default" id="Yfi-uO-asW"/>
+                            <constraint firstAttribute="trailing" secondItem="foC-CO-xun" secondAttribute="trailing" constant="20" symbolic="YES" type="default" id="bpU-cL-zuc"/>
+                            <constraint firstItem="foC-CO-xun" firstAttribute="top" secondItem="3" secondAttribute="top" constant="20" symbolic="YES" type="default" id="feI-Yf-qSx"/>
+                            <constraint firstAttribute="bottom" secondItem="l4U-q7-coy" secondAttribute="bottom" constant="-64" id="m3K-1t-DXx"/>
+                            <constraint firstItem="nGQ-Nq-VDY" firstAttribute="top" secondItem="g7G-BE-nL7" secondAttribute="bottom" constant="8" symbolic="YES" type="default" id="t4K-94-MDT"/>
+                            <constraint firstItem="nGQ-Nq-VDY" firstAttribute="centerX" secondItem="foC-CO-xun" secondAttribute="centerX" type="default" id="zOf-Mr-vsg"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="drawingImageView" destination="mpE-Me-CSU" id="UsD-tn-vdV"/>
+                        <outlet property="drawingView" destination="l4U-q7-coy" id="XmQ-nc-vd4"/>
+                        <outlet property="imageView" destination="foC-CO-xun" id="tnr-SP-tOp"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="4" sceneMemberID="firstResponder"/>
+            </objects>
+        </scene>
+    </scenes>
+    <classes>
+        <class className="NSLayoutConstraint" superclassName="NSObject">
+            <source key="sourceIdentifier" type="project" relativePath="./Classes/NSLayoutConstraint.h"/>
+        </class>
+        <class className="ViewController" superclassName="UIViewController">
+            <source key="sourceIdentifier" type="project" relativePath="./Classes/ViewController.h"/>
+            <relationships>
+                <relationship kind="action" name="getImage:"/>
+                <relationship kind="action" name="share:"/>
+                <relationship kind="outlet" name="drawingImageView" candidateClass="UIImageView"/>
+                <relationship kind="outlet" name="drawingView" candidateClass="UIView"/>
+                <relationship kind="outlet" name="imageView" candidateClass="UIImageView"/>
+            </relationships>
+        </class>
+    </classes>
+    <simulatedMetricsContainer key="defaultSimulatedMetrics">
+        <simulatedStatusBarMetrics key="statusBar"/>
+        <simulatedOrientationMetrics key="orientation"/>
+        <simulatedScreenMetrics key="destination" type="retina4"/>
+    </simulatedMetricsContainer>
+</document>
