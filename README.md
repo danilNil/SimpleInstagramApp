@@ -1,4 +1,4 @@
 SimpleInstagramApp
 ==================
 
-How to share image from your iOS app to Instagram by using AFNetworking
+How to share image from your iOS app to Instagram
